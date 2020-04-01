@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		713644662434CD9900E1C38F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713644652434CD9900E1C38F /* main.swift */; };
+		7136446E2434CDEC00E1C38F /* AppInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136446D2434CDEC00E1C38F /* AppInformation.swift */; };
+		713644AA2434CF8A00E1C38F /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 713644A82434CF7C00E1C38F /* libiconv.2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,12 @@
 /* Begin PBXFileReference section */
 		713644622434CD9900E1C38F /* Themey CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Themey CLI"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713644652434CD9900E1C38F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7136446D2434CDEC00E1C38F /* AppInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInformation.swift; sourceTree = "<group>"; };
+		713644A52434CF7C00E1C38F /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
+		713644A62434CF7C00E1C38F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		713644A72434CF7C00E1C38F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		713644A82434CF7C00E1C38F /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		713644A92434CF7C00E1C38F /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713644AA2434CF8A00E1C38F /* libiconv.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +52,7 @@
 			children = (
 				713644642434CD9900E1C38F /* Themey CLI */,
 				713644632434CD9900E1C38F /* Products */,
+				713644A42434CF7C00E1C38F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +67,30 @@
 		713644642434CD9900E1C38F /* Themey CLI */ = {
 			isa = PBXGroup;
 			children = (
+				7136446C2434CDC900E1C38F /* scripts */,
 				713644652434CD9900E1C38F /* main.swift */,
 			);
 			path = "Themey CLI";
+			sourceTree = "<group>";
+		};
+		7136446C2434CDC900E1C38F /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				7136446D2434CDEC00E1C38F /* AppInformation.swift */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		713644A42434CF7C00E1C38F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				713644A92434CF7C00E1C38F /* libiconv.2.4.0.tbd */,
+				713644A82434CF7C00E1C38F /* libiconv.2.tbd */,
+				713644A72434CF7C00E1C38F /* libiconv.tbd */,
+				713644A52434CF7C00E1C38F /* libicucore.A.tbd */,
+				713644A62434CF7C00E1C38F /* libicucore.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +125,7 @@
 				TargetAttributes = {
 					713644612434CD9900E1C38F = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -120,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7136446E2434CDEC00E1C38F /* AppInformation.swift in Sources */,
 				713644662434CD9900E1C38F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,10 +276,17 @@
 		7136446A2434CD9900E1C38F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CGSBH45W3P;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -254,9 +294,15 @@
 		7136446B2434CD9900E1C38F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CGSBH45W3P;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
