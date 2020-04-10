@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712A11042435288800E824D2 /* Vento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A11032435288800E824D2 /* Vento.swift */; };
 		713644662434CD9900E1C38F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713644652434CD9900E1C38F /* main.swift */; };
 		7136446E2434CDEC00E1C38F /* AppInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136446D2434CDEC00E1C38F /* AppInformation.swift */; };
 		713644AA2434CF8A00E1C38F /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 713644A82434CF7C00E1C38F /* libiconv.2.tbd */; };
@@ -25,7 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		713644622434CD9900E1C38F /* Themey CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Themey CLI"; sourceTree = BUILT_PRODUCTS_DIR; };
+		712A11032435288800E824D2 /* Vento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vento.swift; sourceTree = "<group>"; };
+		713644622434CD9900E1C38F /* Vento CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Vento CLI"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713644652434CD9900E1C38F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7136446D2434CDEC00E1C38F /* AppInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInformation.swift; sourceTree = "<group>"; };
 		713644A52434CF7C00E1C38F /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
@@ -50,7 +52,7 @@
 		713644592434CD9900E1C38F = {
 			isa = PBXGroup;
 			children = (
-				713644642434CD9900E1C38F /* Themey CLI */,
+				713644642434CD9900E1C38F /* Vento CLI */,
 				713644632434CD9900E1C38F /* Products */,
 				713644A42434CF7C00E1C38F /* Frameworks */,
 			);
@@ -59,24 +61,25 @@
 		713644632434CD9900E1C38F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				713644622434CD9900E1C38F /* Themey CLI */,
+				713644622434CD9900E1C38F /* Vento CLI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		713644642434CD9900E1C38F /* Themey CLI */ = {
+		713644642434CD9900E1C38F /* Vento CLI */ = {
 			isa = PBXGroup;
 			children = (
 				7136446C2434CDC900E1C38F /* scripts */,
 				713644652434CD9900E1C38F /* main.swift */,
 			);
-			path = "Themey CLI";
+			path = "Vento CLI";
 			sourceTree = "<group>";
 		};
 		7136446C2434CDC900E1C38F /* scripts */ = {
 			isa = PBXGroup;
 			children = (
 				7136446D2434CDEC00E1C38F /* AppInformation.swift */,
+				712A11032435288800E824D2 /* Vento.swift */,
 			);
 			path = scripts;
 			sourceTree = "<group>";
@@ -96,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		713644612434CD9900E1C38F /* Themey CLI */ = {
+		713644612434CD9900E1C38F /* Vento CLI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 713644692434CD9900E1C38F /* Build configuration list for PBXNativeTarget "Themey CLI" */;
+			buildConfigurationList = 713644692434CD9900E1C38F /* Build configuration list for PBXNativeTarget "Vento CLI" */;
 			buildPhases = (
 				7136445E2434CD9900E1C38F /* Sources */,
 				7136445F2434CD9900E1C38F /* Frameworks */,
@@ -108,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = "Themey CLI";
+			name = "Vento CLI";
 			productName = "Themey CLI";
-			productReference = 713644622434CD9900E1C38F /* Themey CLI */;
+			productReference = 713644622434CD9900E1C38F /* Vento CLI */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7136445D2434CD9900E1C38F /* Build configuration list for PBXProject "Themey CLI" */;
+			buildConfigurationList = 7136445D2434CD9900E1C38F /* Build configuration list for PBXProject "Vento CLI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				713644612434CD9900E1C38F /* Themey CLI */,
+				713644612434CD9900E1C38F /* Vento CLI */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7136446E2434CDEC00E1C38F /* AppInformation.swift in Sources */,
+				712A11042435288800E824D2 /* Vento.swift in Sources */,
 				713644662434CD9900E1C38F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -303,6 +308,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -311,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7136445D2434CD9900E1C38F /* Build configuration list for PBXProject "Themey CLI" */ = {
+		7136445D2434CD9900E1C38F /* Build configuration list for PBXProject "Vento CLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				713644672434CD9900E1C38F /* Debug */,
@@ -320,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		713644692434CD9900E1C38F /* Build configuration list for PBXNativeTarget "Themey CLI" */ = {
+		713644692434CD9900E1C38F /* Build configuration list for PBXNativeTarget "Vento CLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7136446A2434CD9900E1C38F /* Debug */,

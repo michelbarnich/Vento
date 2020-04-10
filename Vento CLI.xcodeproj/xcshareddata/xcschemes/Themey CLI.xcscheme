@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "713644612434CD9900E1C38F"
-               BuildableName = "Themey CLI"
-               BlueprintName = "Themey CLI"
-               ReferencedContainer = "container:Themey CLI.xcodeproj">
+               BuildableName = "Vento CLI"
+               BlueprintName = "Vento CLI"
+               ReferencedContainer = "container:Vento CLI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,23 +45,31 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "713644612434CD9900E1C38F"
-            BuildableName = "Themey CLI"
-            BlueprintName = "Themey CLI"
-            ReferencedContainer = "container:Themey CLI.xcodeproj">
+            BuildableName = "Vento CLI"
+            BlueprintName = "Vento CLI"
+            ReferencedContainer = "container:Vento CLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-b"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-e"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-a"
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-i"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/test\ theme"
-            isEnabled = "YES">
+            argument = "/Users/michelbarnich/Desktop/vento_backup"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
@@ -76,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "713644612434CD9900E1C38F"
-            BuildableName = "Themey CLI"
-            BlueprintName = "Themey CLI"
-            ReferencedContainer = "container:Themey CLI.xcodeproj">
+            BuildableName = "Vento CLI"
+            BlueprintName = "Vento CLI"
+            ReferencedContainer = "container:Vento CLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
