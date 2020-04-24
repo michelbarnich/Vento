@@ -5,7 +5,7 @@ print("""
 |          Vento CLI          |
 |    made by @michelbarnich   |
 -------------------------------
-This sowftware is meant for development purposes only! You are not allowed to share this software with 3rd parties! Even though it is very unlikely, I'm not responsible for any damage that might be caused by using vento or vento CLI.
+This sowftware is meant for development purposes only! Even though it is very unlikely, I'm not responsible for any damage that might be caused by using vento or vento CLI.
 
 usage:
 -b  print Bundle Identifiers of Apps in "/Applications" Use this if a specific Icon doesnt show up, maybe the Info.plist of the Application messes up the "XML Parser"
